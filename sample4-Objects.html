@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+    
+    var userinfo = {}
+    //userinfo.name
+    userinfo["name"] = "Akash"
+    userinfo["contact"] = "0000"
+    userinfo["age"] = 30
+    userinfo["location"] = "india" ;
+    delete userinfo["age"];
+    //document.write("name :" + userinfo.name + "<br> contact : " + userinfo.contact +
+    //"<br> age:" + userinfo.age + "<br> location :" + userinfo.location)
+    for(abc in userinfo){
+        document.write (abc + " : " + userinfo[abc] + "<br>")
+    }
+
+
+
+
+
+    
+    </script>
+</body>
+</html> 

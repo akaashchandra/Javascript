@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <br>
+   <script>
+    var friends = ["Murali","Akash",30,"Ravi","Raj"]
+
+    console.log(friends.length)
+
+    //Push Method will Add a value to the End of the Array
+    friends.push("Ram")
+   
+    //Unshift Method will add value to the Begining of the Array
+    friends.unshift("Kiran")
+
+    friends.pop();//Removing Th last or Undoing the Push;
+
+    friends.shift()//Removing The first or undoing the unshift
+
+    //Splice Method wil remove a value at the specified Position
+    // friends.splice(1)
+
+    friends.splice(2,0,"RaMK");
+
+    friends.sort()//Ascending Order Sorting
+
+    friends.reverse();
+    
+    document.write(friends)
+    </script> 
+</body>
+</html>

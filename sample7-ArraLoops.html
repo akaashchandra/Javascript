@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <script>
+    //    var friends =[
+    //        {'fname':'Murali','lname':'Krishna'},
+    //        {'fname':'Akash','lname':'KM'}
+    //    ] 
+
+    var friends = [
+    {
+        "fname": "Nathan",
+        "lname": "Marks"
+    },
+    {
+        "fname": "Maureen",
+        "lname": "Needham"
+    },
+    {
+        "fname": "Adreta",
+        "lname": "Oxman"
+    },
+    {
+        "fname": "Natilee",
+        "lname": "Langfeldt"
+    },
+]
+       for(i=0;i<friends.length;i++){
+           document.write("First Name :" + friends[i].fname + "<br>" + "Last Name :" + friends[i].lname + "<br>" +  "<br>" +"<br>")
+       }
+    </script>
+<script>
+    var person = prompt("First name:", );
+    var persontwo = prompt("Last name:", );
+    if (person==null) 
+    {
+        document.write("User cancelled the prompt.")
+    }
+else
+    {
+    document.write("First Name : "+ person + "<br>" + "Last Name : "+ persontwo)
+    }
+    
+</script>
+</body>
+</html>
