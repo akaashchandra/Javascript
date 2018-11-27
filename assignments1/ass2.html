@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+
+    </div>
+       <br>
+        <ul id="myUl">
+           
+        </ul>
+        <div id="info">
+            <p id="name"></p>
+            <p id="capital"></p>
+            <p id="language"></p>
+            <p id="population"></p>
+            <img src="" alt="" id="image">
+        </div>
+    <script>
+        
+        
+    var states = [
+        {
+        name:"Karnataka",
+        capital:"Bangalore",
+        language: "Kannada",
+        population:100000,
+        image:"https://timesofindia.indiatimes.com/photo/59915337.cms"
+    },
+    {
+        name:"Tamil Nadu",
+        capital:"Chennai",
+        language: "Tamil",
+        population:100000,
+        image:"https://timesofindia.indiatimes.com/photo/59915337.cms"
+    },
+    {
+        name:"Andra Pradesh",
+        capital:"Bangalore",
+        language: "Kannada",
+        population:100000,
+        image:"https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/sites/default/files/Andhra-Pradesh-NEW%20DC_7_1_1.jpg"
+    },
+    ]
+    var details=""
+        for (a in states){
+         
+            var myLi=document.createElement("li");
+            myLi.innerHTML=states[a].name
+            document.getElementById("myUl").appendChild(myLi)
+        }
+        document.getElementById("myUl").onclick=function (event){
+            console.log(event.target.innerHTML)
+            var selectedState=event.target.innerHTML;
+            for (a in states){
+                if(selectedState==states[a].name){
+                    console.log(states[a])
+                    document.getElementById("name").innerHTML="State Name : "+states[a].name
+                    document.getElementById("capital").innerHTML="State Capital : "+states[a].capital
+                    document.getElementById("population").innerHTML="State Population : "+states[a].population
+                    document.getElementById("language").innerHTML="State Language : "+states[a].language
+
+                   document.getElementById("image").setAttribute("src",states[a].image)
+                }
+            }
+        }
+    </script>
+</body>
+</html>

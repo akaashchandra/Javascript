@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var VR_SubmittedFor = Class.create();
+VR_SubmittedFor.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	getrequestedfor: function() {
+		//	gs.addInfoMessage("reached");
+		var req= this.getParameter('sysparm_user_name');
+		var usr= new GlideRecord('sys_user');
+		usr.addQuery('sys_id',req);
+		usr.query();
+		if(usr.next())
+			{
+			
+			var result = this.newItem("result");
+				}
+	},
+	
+	_addFavorite : function(name, value) {
+		//gs.addInfoMessage(value);
+		var favs = this.newItem("favorite");
+		favs.setAttribute("name", name);
+			},
+	type: 'VR_SubmittedFor'
+});
+    
+    </script>
+</body>
+</html>

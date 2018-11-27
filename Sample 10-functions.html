@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="showpersondetails()"> show person </button> -->
+        <!-- <button onmouseover="showpersondetails()"> show person </button> -->
+        <!-- <button onmouseout="showpersondetails()"> show person </button> -->
+        <!-- <button ondblclick="showpersondetails()"> show person </button> -->
+        <!-- <button onkeyup="showpersondetails()"> show person </button> -->
+        <!-- <button onkeypress="showpersondetails()"> show person </button>
+        <input type="text" onchange="showpersondetails()">
+        <select name="" id="" onchange="showpersondetails()">
+            <option value="12345"> Hello World </option>
+            <option value="123456"> Hello India </option>
+        </select> -->
+
+    <div id="demo"></div>
+    <script>
+    var person = {
+        "fname": "Natilee",
+        "lname": "Langfeldt"
+    }
+    // function showpersondetails(){
+    //     document.getElementById("demo").innerHTML=person.fname +"</br>" + person.lname
+    // }
+    (function(){
+        var person = {
+        "fname": "Natilee",
+        "lname": "Langfeldt"
+    }
+        document.getElementById("demo").innerHTML=person.fname +"</br>" + person.lname 
+    }())
+    </script>
+</body>
+
+</html>

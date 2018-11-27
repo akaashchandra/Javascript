@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Adding a event Handler as Attribute -->
+    <!-- <button onclick="sayHello()">click</button> -->
+    <button id="myBtn">Click</button>
+    <a name="html">HTML Tutorial</a><br>
+    <a name="css">CSS Tutorial</a><br>
+    <a name="xml">XML Tutorial</a><br>
+    
+    
+    <script>
+        // Adding An Event Handler throug DOM Method
+        document.getElementById("myBtn").onclick = sayHello;
+        function sayHello(){
+            alert("Hello world")
+        }
+    </script>
+</body>
+</html>
